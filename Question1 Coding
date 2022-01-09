@@ -11,7 +11,7 @@ class C_MARTS {
         int item = sc.nextInt();
        
         
-        System.out.println("Enter the price of first item :");
+        System.out.println("Enter the price of first item : RM");
         int price1 = sc.nextInt();
        
         
