@@ -1,0 +1,59 @@
+package Question2;
+import java.util.Scanner;
+public class Commission {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scan = new Scanner (System.in);
+		
+		int workHour;
+		double sales;
+		double commission;
+		double wages = 5.00;
+		double totalDailyWages;
+		double dailyWages;
+		
+		System.out.print("Enter sales : RM");
+		sales = scan.nextInt();
+		
+		System.out.print("Enter hours worked : ");
+		workHour = scan.nextInt();
+		System.out.println();
+		
+		if ((sales >= 150) && (sales <=300))
+		{
+			commission = (sales*0.05);
+			dailyWages = workHour * wages;
+			totalDailyWages = dailyWages + commission;
+			System.out.printf("Commission : RM%.2f" , commission);
+			System.out.println();
+			System.out.printf("Daily Wages : RM%.2f" , totalDailyWages);
+			
+		}
+		
+		if ((sales >= 301) && (sales <=500)) 
+		{
+			commission = (sales*0.10);
+		    dailyWages = workHour * wages;
+			totalDailyWages = dailyWages + commission;
+			System.out.printf("Commission : RM%.2f" , commission);
+			System.out.println();
+			System.out.printf("Daily Wages : RM%.2f" , totalDailyWages);
+			
+		}
+		
+		else if (sales >= 500)
+		{
+			commission = (sales*0.15);
+			dailyWages = workHour * wages;
+			totalDailyWages = dailyWages + commission;
+			System.out.printf("Commission  : RM%.2f", commission);
+			System.out.println();
+			System.out.printf("Daily Wages  : RM%.2f", totalDailyWages);
+		}
+		
+		scan.close();
+
+	}
+
+}
